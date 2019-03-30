@@ -1,0 +1,8 @@
+https://console.cloud.google.com/compute/instances?project=deeplearningfishnames&folder&organizationId&instancessize=50
+pip3 install textgenrnn
+python3
+from textgenrnn import textgenrnn
+sick = textgenrnn()
+sick.train_from_file('latin.txt', num_epochs=1, new_model=True)
+sick.generate(n=10, temperature=0.8)
+urban = sick
